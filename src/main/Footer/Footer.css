@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #eee;
+    padding: 3rem 1rem;
+}
+
+.bottom {
+    padding-top: 3rem;
+}
+
+.line {
+    margin-bottom: 1rem;
+}
+
+.m-align{
+    margin: auto;
+    margin-top: 0;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+
+
+
+

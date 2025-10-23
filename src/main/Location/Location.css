@@ -1,0 +1,35 @@
+.location {
+    margin: 5rem auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+.location h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 940px) {
+    .demo .container {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .demo iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
