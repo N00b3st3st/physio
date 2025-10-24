@@ -1,17 +1,24 @@
 import React from 'react'
-import john from '../../assets/john-doe.png'
+import profile from '../../assets/profile.jpeg'
 import './About.css'
 
 const About = () => {
     return (
         <div className='about' id='about'>
-            <div className='container'>
-                <img src={john} alt='john' />
-                <div className='col-12'>
+            <div className='col-12 container'>
+                <div className='col-md-6 col-xs-12 p-container'>
+                    <img src={profile} alt='profile' />
+                </div>
+                <div className='col-md-6 col-xs-12 p-container'>
                     <h2>About</h2>
                     <span className='line'></span>
-                    <p>Intense is an International Financial Planning company with offices i n multiple jurisdictions over the world. Working with Intense gives me the ability to advise internat ional expatriates living in the middle east from where I live in USA.</p>
-                    <p>I am John Doe, a senior advisor for an independently owned financial planning company called Intense.</p>
+                    <p style={{textAlign: 'justify'}}>
+                        I am John Doe, a qualified physiotherapist with a degree in Physiotherapy 
+                        from Ireland and over two years of hands-on clinical experience. Skilled in patient assessment, 
+                        rehabilitation planning, and therapeutic exercise programs, with a strong focus on improving mobility, 
+                        managing pain, and promoting long-term recovery. Demonstrates excellent communication and interpersonal 
+                        skills, with a commitment to evidence-based practice and patient-centered care.
+                    </p>
                     <button className='button'>Explore More</button>
                 </div>
             </div>

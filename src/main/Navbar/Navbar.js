@@ -24,8 +24,7 @@ const Navbar = () => {
         <div className={(color ? 'header header-bg' : 'header')}>
             <nav className='navbar'>
                 <div href='#home' className={'nav-menu'}>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, fontSize: '19px' }} />
-                    <h2 style={{fontWeight: 'bolder'}}>Her Wellness</h2>
+                    <h2 style={{fontWeight: 'bolder', fontStyle: 'italic'}}>Her Wellness</h2>
                 </div>
                 <div className='hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)

@@ -6,6 +6,19 @@ import Instagram from '@mui/icons-material/Instagram';
 import './Footer.css'
 
 const Footer = () => {
+
+    const handleRedirectContact = (contact) => {
+        if(contact === "Facebook"){
+          window.location.href = "https://www.facebook.com/"
+        } else if (contact === "Instagram") {
+          window.location.href = "https://www.instagram.com/"
+        } else if (contact === "LinkedIn") {
+          window.location.href = "https://www.linkedin.com/"
+        }  else if (contact === "Whatsapp") {
+          window.location.href = "https://www.whatsapp.com/"
+        }
+      }
+
     return (
         <div className='footer'>
             <div className={'col-12 d-flex m-auto'}>
@@ -15,16 +28,16 @@ const Footer = () => {
                     </div>
                     <div className={'d-flex'}>
                         <div className={'col-3'}>
-                            <Facebook style={{color:'blue', cursor:'pointer'}}/>
+                            <Facebook  onClick= {() => handleRedirectContact('Facebook')} style={{color:'blue', cursor:'pointer'}}/>
                         </div>
                         <div className={'col-3'}>
-                            <WhatsApp style={{color:'green', cursor:'pointer'}} />
+                            <WhatsApp  onClick= {() => handleRedirectContact('Whatsapp')} style={{color:'green', cursor:'pointer'}} />
                         </div>
                         <div className={'col-3'}>
-                            <Instagram style={{color:'deeppink', cursor:'pointer'}}/>
+                            <Instagram  onClick= {() => handleRedirectContact('Instagram')} style={{color:'deeppink', cursor:'pointer'}}/>
                         </div>
                         <div className={'col-3'}>
-                            <LinkedIn style={{color:'blue', cursor:'pointer'}} />
+                            <LinkedIn  onClick= {() => handleRedirectContact('LinkedIn')} style={{color:'blue', cursor:'pointer'}} />
                         </div>
                     </div>
                 </div>
